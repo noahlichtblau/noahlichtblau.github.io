@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 // Serve static files from the src directory
-app.use(express.static(path.join(__dirname, "src")));
+app.use(express.static(__dirname))
 
 // Basic route handler for the root path
 // app.get("/", (req, res) => {
